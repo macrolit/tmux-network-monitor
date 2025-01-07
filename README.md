@@ -18,67 +18,21 @@ A lightweight, customizable tmux plugin for displaying network information in yo
 - Works on both Linux and macOS
 
 All segments are optional and customizable
-Terminal Emulator font will be utilized
+Terminal font will be utilized
 
-## Installation
-
-1. Clone this repository:
-
-- text
-    
-    `git clone https://github.com/macrolit/tmux-network-monitor.git ~/.tmux/plugins/tmux-network-monitor`
-    
-- Add the plugin to your `.tmux.conf` file:
-- text
-    
-    `run-shell ~/.tmux/plugins/tmux-network-monitor/network_monitor.tmux`
-    
-- Reload tmux configuration:
-
-1. text
-    
-    `tmux source-file ~/.tmux.conf`
-    
-
-## Configuration
-
-Add the following to your `.tmux.conf`:
-
-text
-
-`set -g status-right '#(~/.tmux/plugins/tmux-network-monitor/scripts/bandwidth.sh) | #(~/.tmux/plugins/tmux-network-monitor/scripts/ip_address.sh) | %H:%M %d-%b-%y'`
-
-Adjust the path if you installed the plugin in a different location.
 
 ## Customization
 
 - Edit `scripts/bandwidth.sh` to modify the network interface or update interval.
 - Modify `scripts/ip_address.sh` to change how the IP address is displayed.
 
-## Troubleshooting
-
-If the plugin doesn't display correctly:
-
-1. Ensure scripts are executable (`chmod +x scripts/*.sh`)
-2. Check tmux version compatibility (`tmux -V`)
-3. Verify script paths in your `.tmux.conf`
-4. Run tmux in verbose mode for debugging: `tmux -v`
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-
-
-
-
-
-
 
 
 ## Tmux Network Monitor Plugin
 
-A tmux plugin that displays real-time network interface and bandwidth information in your tmux status bar.
+A tmux plugin that displays real-time network interface and network information in your tmux status bar.
+Basic replacement to [tmux-powerline] without all the additional fuss and complexity.
+
 
 ## Features
 
