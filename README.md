@@ -10,13 +10,16 @@ A lightweight, customizable tmux plugin for displaying network information in yo
 
 - Lightweight
 - Modular
+- Fully Customizable
 - Wide array of optional segments
 - Network bandwidth usage (download and upload speeds)
 - Shows current IP address
-- Customizable update intervals
+- Custom update intervals
 - Works on both Linux and macOS
 
 All segments are optional and customizable
+Terminal Emulator font will be utilized
+
 ## Installation
 
 1. Clone this repository:
