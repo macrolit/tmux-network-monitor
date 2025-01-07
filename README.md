@@ -49,7 +49,7 @@ Basic replacement to [tmux-powerline] without all the additional fuss and comple
 
 text
 
-`git clone https://github.com/yourusername/tmux-network-monitor.git ~/.tmux/plugins/tmux-network-monitor`
+`git clone https://github.com/macrolit/tmux-network-monitor.git ~/.tmux/plugins/tmux-network-monitor`
 
 2. Add the plugin to your `.tmux.conf` file:
 
