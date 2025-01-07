@@ -26,7 +26,7 @@ Terminal Emulator font will be utilized
 
 - text
     
-    `git clone https://github.com/yourusername/tmux-network-monitor.git ~/.tmux/plugins/tmux-network-monitor`
+    `git clone https://github.com/macrolit/tmux-network-monitor.git ~/.tmux/plugins/tmux-network-monitor`
     
 - Add the plugin to your `.tmux.conf` file:
 - text
@@ -99,7 +99,11 @@ text
 
 2. Add the plugin to your `.tmux.conf` file:
 
-text
+```text
+set -g @plugin '~/.tmux/plugins/tmux-network-monitor/network_monitor.tmux'
+```
+
+Or alternatively
 
 `run-shell ~/.tmux/plugins/tmux-network-monitor/network_monitor.tmux`
 
@@ -113,11 +117,9 @@ text
 
 Add the following lines to your `.tmux.conf` file:
 
-text
-
 `set -g status-right-length 100 set -g status-right '#(~/.tmux/plugins/tmux-network-monitor/scripts/interface.sh) #(~/.tmux/plugins/tmux-network-monitor/scripts/bandwidth.sh)'`
 
-replicate my config (images)
+Or replicate my config (images)
 
 ```lua
 # StatusBar configuration here
